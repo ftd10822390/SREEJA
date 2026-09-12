@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You ✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+  <div id="stars"></div>
+
+  <main>
+    <section class="screen" id="welcome">
+      <p class="small-text">✨ I made something for you...</p>
+      <h1>Hey, you 🌙</h1>
+      <button id="enterBtn">Enter the Night ✨</button>
+    </section>
+
+    <section class="screen hidden" id="intro">
+      <h1>This little universe is for you.</h1>
+      <p>Some things are better shown than explained.</p>
+      <button onclick="showSection('name')">Continue →</button>
+    </section>
+
+    <section class="screen hidden" id="name">
+      <p class="small-text">A little something...</p>
+      <h1 id="herName">For You ⭐</h1>
+      <p>Because some people make ordinary days feel special.</p>
+      <button onclick="showSection('story')">Continue →</button>
+    </section>
+
+    <section class="screen hidden" id="story">
+      <h1>Our Story 📖</h1>
+      <p>And this is where our little story begins...</p>
+      <button onclick="showSection('memories')">Our Memories →</button>
+    </section>
+
+    <section class="screen hidden" id="memories">
+      <h1>Memories 📸</h1>
+      <p>Your photos will go here.</p>
+      <p class="small-text">You can add them manually later.</p>
+      <button onclick="showSection('letter')">There's something else... 💌</button>
+    </section>
+
+    <section class="screen hidden" id="letter">
+      <h1>One Little Letter 💌</h1>
+      <p>
+        There are some things that are difficult to say,
+        so I thought I'd write them instead...
+      </p>
+      <button onclick="showSection('final')">Open the final surprise ✨</button>
+    </section>
+
+    <section class="screen hidden" id="final">
+      <h1>Thank you for being you. ❤️</h1>
+      <p>You are truly special.</p>
+      <button onclick="location.reload()">Start Again ↻</button>
+    </section>
+  </main>
+
+  <audio id="song1" loop>
+    <source src="music/song1.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="song2" loop>
+    <source src="music/song2.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="song3" loop>
+    <source src="music/song3.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
