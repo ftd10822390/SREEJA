@@ -39,11 +39,20 @@
     </section>
 
     <section class="screen hidden" id="memories">
-      <h1>Memories 📸</h1>
-      <p>Your photos will go here.</p>
-      <p class="small-text">You can add them manually later.</p>
-      <button onclick="showSection('letter')">There's something else... 💌</button>
-    </section>
+  <h1>Memories 📸</h1>
+
+  <p>Some moments are worth keeping forever.</p>
+
+  <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; max-width:900px; margin:30px auto;">
+    <img src="images/memory1.jpg" alt="Memory 1" style="width:100%; height:260px; object-fit:cover; border-radius:16px; box-shadow:0 0 25px rgba(255,255,255,0.15);">
+    
+    <img src="images/memory2.jpg" alt="Memory 2" style="width:100%; height:260px; object-fit:cover; border-radius:16px; box-shadow:0 0 25px rgba(255,255,255,0.15);">
+    
+    <img src="images/memory3.jpg" alt="Memory 3" style="width:100%; height:260px; object-fit:cover; border-radius:16px; box-shadow:0 0 25px rgba(255,255,255,0.15);">
+  </div>
+
+  <button onclick="showSection('letter')">There's something else... 💌</button>
+</section>
 
     <section class="screen hidden" id="letter">
       <h1>One Little Letter 💌</h1>
